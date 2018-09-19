@@ -70,7 +70,7 @@
                     </button>
                 </li>
                 <li>
-                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar" >
+                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar" onclick="CalificacionAbierta()">
                         <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                     </button>
                 </li>
@@ -113,14 +113,14 @@
             <div class="panel-body">
                 <div class="text-question">
                     <input type="text"  size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre1a">&nbsp;
-                    <span><b> 1. Describe </b>  algunos elementos que hayas observado en un escenario cuando viste una obra en el teatro, por
-                        televisión o asististe a un concierto.
+                    <span><b> Explica </b> con tus palabras lo que significa principal y secundario. Ejemplifica cada caso.
                     </span></div><br>
+                    <div class="text-question">
+                            <span>Principal:</span></div><br>
                 <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
 
                     <div class="text-question">
-                            <span><b> 2. Explica</b>  por qué todos esos elementos son importantes.
-                            </span></div><br>
+                            <span>Secundario:</span></div><br>
                 <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
                 
             </div>
@@ -179,13 +179,11 @@
             <script src="js/jquery.animate.css.js"></script>
             <script src="js/Utilitario.js"></script>
             <script src="js/validacionesExtras.js"></script>
-            <script src="js/actividad18.js"></script>
+            <script src="js/actividad29.js"></script>
 
             <script>
-                $("#n_pagina").html("58"); //impresion de pagina            
-                $(".btnCalificar").bind("click", function () {
-                    CalificacionAbierta();
-                });
+                $("#n_pagina").html("68"); //impresion de pagina            
+            
             </script>
 
 </body>

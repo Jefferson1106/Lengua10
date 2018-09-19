@@ -29,7 +29,7 @@
         <button type="button" class="close" onclick="cerrar_ayuda()" aria-label="Close"><span class="glyphicon glyphicon-remove-sign"
                 aria-hidden="true"></span></button>
         <!--ACA ESCRIBIR TEXTO DE LA AYUDA DE LA ACTIVIDAD-->
-        Observa con atención las siguientes preguntas y respondelas correctamente.<br>
+        Observa con atención las siguiente pregunta y respondela correctamente.<br>
         <span id="ayudas"></span>
 
     </div>
@@ -70,7 +70,7 @@
                     </button>
                 </li>
                 <li>
-                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar" >
+                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar" onclick="CalificacionAbierta()">
                         <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                     </button>
                 </li>
@@ -113,14 +113,11 @@
             <div class="panel-body">
                 <div class="text-question">
                     <input type="text"  size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre1a">&nbsp;
-                    <span><b> 1. Describe </b>  algunos elementos que hayas observado en un escenario cuando viste una obra en el teatro, por
-                        televisión o asististe a un concierto.
-                    </span></div><br>
-                <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
-
+                    <span><b>1. Observa </b> la imagen.</span></div><br>
+                    <img src="img/i1_p80_act1.jpg" class="img-responsive"><br>
                     <div class="text-question">
-                            <span><b> 2. Explica</b>  por qué todos esos elementos son importantes.
-                            </span></div><br>
+                            <span><b>2. Justifica.</b> ¿Por qué las cuatro personas utilizan expresiones distintas para referirse a
+                                una misma realidad?</span></div><br>
                 <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
                 
             </div>
@@ -179,13 +176,11 @@
             <script src="js/jquery.animate.css.js"></script>
             <script src="js/Utilitario.js"></script>
             <script src="js/validacionesExtras.js"></script>
-            <script src="js/actividad18.js"></script>
+            <script src="js/actividad44.js"></script>
 
             <script>
-                $("#n_pagina").html("58"); //impresion de pagina            
-                $(".btnCalificar").bind("click", function () {
-                    CalificacionAbierta();
-                });
+                $("#n_pagina").html("80"); //impresion de pagina            
+            
             </script>
 
 </body>

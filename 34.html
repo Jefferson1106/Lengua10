@@ -60,7 +60,8 @@
                     </button>
                 </li>
                 <li>
-                    <button class="btn button button_2 btnIniciar mytooltip" style="display: none !important;" disabled data-info="Iniciar">
+                    <button class="btn button button_2 btnIniciar mytooltip" style="display: none !important;" disabled
+                        data-info="Iniciar">
                         <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
                     </button>
                 </li>
@@ -70,20 +71,22 @@
                     </button>
                 </li>
                 <li>
-                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar" >
+                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar"
+                        onclick="CalificacionAbierta()">
                         <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                     </button>
                 </li>
                 <li>
-                    <button class="btn button button_5 mytooltip display-none" style="display: none !important;" data-info="Pantalla completa"
-                        onclick="full_screen_change()">
+                    <button class="btn button button_5 mytooltip display-none" style="display: none !important;"
+                        data-info="Pantalla completa" onclick="full_screen_change()">
                         <span id="full_ico" class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
                     </button>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;margin-left: 0px; ">
                 <li><span class="notificacion actividad display-none">
-                        <span class="glyphicon glyphicon-list-alt"></span> Actividad <span id="n_cont">1</span> / <span id="n_ejer">1</span>
+                        <span class="glyphicon glyphicon-list-alt"></span> Actividad <span id="n_cont">1</span> / <span
+                            id="n_ejer">1</span>
                     </span>
                     <span class="notificacion nota">
                         <span class="glyphicon glyphicon-pencil"></span> Nota <span id="txtNota">/ 10</span>
@@ -112,17 +115,52 @@
 
             <div class="panel-body">
                 <div class="text-question">
-                    <input type="text"  size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre1a">&nbsp;
-                    <span><b> 1. Describe </b>  algunos elementos que hayas observado en un escenario cuando viste una obra en el teatro, por
-                        televisión o asististe a un concierto.
-                    </span></div><br>
-                <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
+                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10"
+                        id="pre1a">&nbsp;
+                    <span><b> Crea </b> tres citas textuales largas (puedes utilizar uno de los textos de las otras
+                        asignaturas y citarlo conforme a los
+                        cuadros).</span></div><br>
+                <table class="table" style="text-align: center" border="1" bordercolor="#22D7D2">
+                    <tr>
+                        <td WIDTH="30%" bgcolor="#22D7D2" style="color: #FFFFFF">
+                            <h5><b>Introduce aquí la cita</b></h5>
+                        </td>
+                        <td>Cita textual APA con énfasis en el autor</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea class="form-control text-question no-redimensionar " cols="15" rows="6" placeholder="Texto"></textarea></td>
+                    </tr>
 
-                    <div class="text-question">
-                            <span><b> 2. Explica</b>  por qué todos esos elementos son importantes.
-                            </span></div><br>
-                <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
-                
+                </table>
+
+                <table class="table" style="text-align: center" border="1" bordercolor="#9558C5">
+                        <tr>
+                            <td WIDTH="30%" bgcolor="#9558C5" style="color: #FFFFFF">
+                                <h5><b>Introduce aquí la cita</b></h5>
+                            </td>
+                            <td>Cita textual APA con énfasis en el texto</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea class="form-control text-question no-redimensionar " cols="15" rows="6" placeholder="Texto"></textarea></td>
+                        </tr>
+    
+                    </table>
+
+                    <table class="table" style="text-align: center" border="1" bordercolor="#E5AD2E">
+                            <tr>
+                                <td WIDTH="30%" bgcolor="#E5AD2E" style="color: #FFFFFF">
+                                    <h5><b>Introduce aquí la cita</b></h5>
+                                </td>
+                                <td>Cita textual Chicago con énfasis en el texto</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea class="form-control text-question no-redimensionar " cols="15" rows="6" placeholder="Texto"></textarea></td>
+                            </tr>
+        
+                        </table>
+
+
+
             </div>
 
 
@@ -146,8 +184,8 @@
                                         <!--el input para ingresar el nombre del alumno debe se txt_alumno-->
                                         <input type="text" class="form-control nombre " id="txtAlumno" placeholder="Ingrese el nombre del alumno">
                                         <div class="alert alert-danger display-none" id="txtAlumnoAlert" role="alert">
-                                            <button type="button" class="close" onclick="o$('#myModal').modal('hide')" aria-label="Close"><span
-                                                    aria-hidden="true">&times;</span></button>
+                                            <button type="button" class="close" onclick="o$('#myModal').modal('hide')"
+                                                aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <span class="glyphicon glyphicon-info-sign error-color" aria-hidden="true"></span>
                                             Por favor ingrese el nombre. Es obligatorio</div>
                                     </div>
@@ -179,13 +217,11 @@
             <script src="js/jquery.animate.css.js"></script>
             <script src="js/Utilitario.js"></script>
             <script src="js/validacionesExtras.js"></script>
-            <script src="js/actividad18.js"></script>
+            <script src="js/actividad34.js"></script>
 
             <script>
-                $("#n_pagina").html("58"); //impresion de pagina            
-                $(".btnCalificar").bind("click", function () {
-                    CalificacionAbierta();
-                });
+                $("#n_pagina").html("71"); //impresion de pagina            
+
             </script>
 
 </body>

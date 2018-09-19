@@ -20,7 +20,6 @@ document.getElementById("pre3a").addEventListener("keypress", () => {
 document.getElementById("pre3a").addEventListener("keyup", () => {
   validMaxIngreso(document.getElementById("pre3a"), 2.5);
 });
-
 document.getElementById("pre4a").addEventListener("keypress", () => {
   validNumero(0, 1, 1);
 });
@@ -28,11 +27,11 @@ document.getElementById("pre4a").addEventListener("keyup", () => {
   validMaxIngreso(document.getElementById("pre4a"), 2.5);
 });
 
-
 var tpre1 = 0;
 var tpre2 = 0;
 var tpre3 = 0;
 var tpre4 = 0;
+
 // #region Pregunta1
 function pregunta1() {
   var pre1a = document.getElementById("pre1a").value;
@@ -43,10 +42,10 @@ function pregunta1() {
 
 // #region Pregunta2
 function pregunta2() {
-  var pre2a = document.getElementById("pre2a").value;
-  tpre2 = pre2a;
-  $("#pre2a").val(parseFloat(tpre2).toFixed(2));
-}
+    var pre2a = document.getElementById("pre2a").value;
+    tpre2 = pre2a;
+    $("#pre2a").val(parseFloat(tpre2).toFixed(2));
+  }
 // #endregion
 
 // #region Pregunta3
@@ -59,10 +58,10 @@ function pregunta3() {
 
 // #region Pregunta4
 function pregunta4() {
-  var pre4a = document.getElementById("pre4a").value;
-  tpre4 = pre4a;
-  $("#pre4a").val(parseFloat(tpre4).toFixed(2));
-}
+    var pre4a = document.getElementById("pre4a").value;
+    tpre4 = pre4a;
+    $("#pre4a").val(parseFloat(tpre4).toFixed(2));
+  }
 // #endregion
 
 // #region Calculo Nota Final
@@ -100,4 +99,5 @@ function NotaFinal() {
     }
   }
 }
+
 // #endregion

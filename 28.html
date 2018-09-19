@@ -21,6 +21,8 @@
         display: inline-flex;
 
     }
+    
+    
 </style>
 
 <body>
@@ -60,7 +62,8 @@
                     </button>
                 </li>
                 <li>
-                    <button class="btn button button_2 btnIniciar mytooltip" style="display: none !important;" disabled data-info="Iniciar">
+                    <button class="btn button button_2 btnIniciar mytooltip" style="display: none !important;" disabled
+                        data-info="Iniciar">
                         <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
                     </button>
                 </li>
@@ -70,20 +73,22 @@
                     </button>
                 </li>
                 <li>
-                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar" >
+                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar"
+                        onClick="NotaFinal()">
                         <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                     </button>
                 </li>
                 <li>
-                    <button class="btn button button_5 mytooltip display-none" style="display: none !important;" data-info="Pantalla completa"
-                        onclick="full_screen_change()">
+                    <button class="btn button button_5 mytooltip display-none" style="display: none !important;"
+                        data-info="Pantalla completa" onclick="full_screen_change()">
                         <span id="full_ico" class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
                     </button>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;margin-left: 0px; ">
                 <li><span class="notificacion actividad display-none">
-                        <span class="glyphicon glyphicon-list-alt"></span> Actividad <span id="n_cont">1</span> / <span id="n_ejer">1</span>
+                        <span class="glyphicon glyphicon-list-alt"></span> Actividad <span id="n_cont">1</span> / <span
+                            id="n_ejer">1</span>
                     </span>
                     <span class="notificacion nota">
                         <span class="glyphicon glyphicon-pencil"></span> Nota <span id="txtNota">/ 10</span>
@@ -111,18 +116,74 @@
             </div>
 
             <div class="panel-body">
-                <div class="text-question">
-                    <input type="text"  size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre1a">&nbsp;
-                    <span><b> 1. Describe </b>  algunos elementos que hayas observado en un escenario cuando viste una obra en el teatro, por
-                        televisión o asististe a un concierto.
-                    </span></div><br>
-                <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    <b>Lectura</b> </a>
 
-                    <div class="text-question">
-                            <span><b> 2. Explica</b>  por qué todos esos elementos son importantes.
-                            </span></div><br>
-                <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
-                
+
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="col-md-12 ">
+                                    <div>
+                                        <div class="text-question">
+                                            <span><b> 1. Lee. </b> el siguiente texto y <b>examina</b> su contenido y
+                                                características. Luego, <b>responde</b> las preguntas.
+                                            </span></div><br>
+                                        <center>
+                                            <img src="img/i1_p66_act1.jpg" class="img-responsive"><br></center><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-question">
+                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10"
+                        id="pre1a">&nbsp;
+                    <span><b>1. Calificación</b>
+                    </span></div><br>
+
+                <div class="text-question">
+                    <span>¿Qué es el calentamiento global?</span></div><br>
+                <textarea class="form-control text-question no-redimensionar " cols="60" rows="1" placeholder="Texto"></textarea><br>
+                <div class="text-question">
+                    <span>¿Por qué ocurre el calentamiento global?</span></div><br>
+                <textarea class="form-control text-question no-redimensionar " cols="60" rows="1" placeholder="Texto"></textarea><br>
+                <div class="text-question">
+                    <span>¿Cuál es la introducción de este texto expositivo?</span></div><br>
+                <textarea class="form-control text-question no-redimensionar " cols="60" rows="1" placeholder="Texto"></textarea><br>
+
+                <div class="text-question">
+                    <span>¿En qué podemos evidenciar que el texto procura ser objetivo?</span></div><br>
+                <textarea class="form-control text-question no-redimensionar " cols="60" rows="1" placeholder="Texto"></textarea><br>
+                <div class="text-question">
+                    <span><b>Argumenta.</b> ¿Se ajusta la conclusión a lo expresado en la estructura de un
+                        texto expositivo?</span></div><br>
+                <textarea class="form-control text-question no-redimensionar " cols="60" rows="1" placeholder="Texto"></textarea><br>
+
+                <div class="text-question">
+                    <span><b>2. Lee</b> el siguiente texto y examina cuál es su intencionalidad, según su contenido.</span></div><br>
+                    <center>
+                            <img src="img/i1_p66_act2.jpg" class="img-responsive"><br></center><br>
+
+                <div class="text-question">
+                        <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre2a">
+                        <span><b>2. Calificación</b>
+                        </span></div><br>
+                        <div class="text-question">
+                                <span>¿Crees que es un texto expositivo? ¿Por qué?</span></div><br>
+                            <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
+
+                            <div class="text-question">
+                                    <span><b>Justifica</b> con ejemplos. ¿Cuál es la estructura de un texto expositivo?</span></div><br>
+                                <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
             </div>
 
 
@@ -146,8 +207,8 @@
                                         <!--el input para ingresar el nombre del alumno debe se txt_alumno-->
                                         <input type="text" class="form-control nombre " id="txtAlumno" placeholder="Ingrese el nombre del alumno">
                                         <div class="alert alert-danger display-none" id="txtAlumnoAlert" role="alert">
-                                            <button type="button" class="close" onclick="o$('#myModal').modal('hide')" aria-label="Close"><span
-                                                    aria-hidden="true">&times;</span></button>
+                                            <button type="button" class="close" onclick="o$('#myModal').modal('hide')"
+                                                aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <span class="glyphicon glyphicon-info-sign error-color" aria-hidden="true"></span>
                                             Por favor ingrese el nombre. Es obligatorio</div>
                                     </div>
@@ -179,13 +240,11 @@
             <script src="js/jquery.animate.css.js"></script>
             <script src="js/Utilitario.js"></script>
             <script src="js/validacionesExtras.js"></script>
-            <script src="js/actividad18.js"></script>
+            <script src="js/actividad28.js"></script>
 
             <script>
-                $("#n_pagina").html("58"); //impresion de pagina            
-                $(".btnCalificar").bind("click", function () {
-                    CalificacionAbierta();
-                });
+                $("#n_pagina").html("66"); //impresion de pagina            
+
             </script>
 
 </body>

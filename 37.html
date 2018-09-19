@@ -27,6 +27,10 @@
         .txt5 {
             font-size: 16px;
         }
+        .subrayar {
+        text-decoration: underline;
+
+    }
 
         .pintarcorrecto {
             background-color: #32a75b;
@@ -37,19 +41,16 @@
             text-decoration: line-through;
         }
 
-
         .correcto {
-            color: #ffffff;
-            background-color: #8FB435;
-            font-weight: 700;
-            margin: 5px;
+        color: #ffffff;
+        background-color: #8FB435;
+        font-weight: 700;
         }
 
         .incorrecto {
-            color: #ffffff;
-            background-color: #E76E80;
-            font-weight: 700;
-            margin: 5px;
+        color: #ffffff;
+        background-color: #E76E80;
+        font-weight: 700;
         }
 
 
@@ -57,8 +58,6 @@
             position: relative;
             font-size: 15px;
         }
-
-
 
         .textarea {
             resize: none;
@@ -74,6 +73,7 @@
                 aria-hidden="true"></span></button>
         <!--ACA ESCRIBIR TEXTO DE LA AYUDA DE LA ACTIVIDAD-->
         Lee cuidadosamente las preguntas, contesta cada una de ellas.<br>
+        4. Da clic sobre la palabra que desea subrayar.<br>
         <span id="ayudas"></span>
     </div>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -102,7 +102,8 @@
                     </button>
                 </li>
                 <li>
-                    <button class="btn button button_2 btnIniciar mytooltip" style="display: none !important;" disabled data-info="Iniciar">
+                    <button class="btn button button_2 btnIniciar mytooltip" style="display: none !important;" disabled
+                        data-info="Iniciar">
                         <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
                     </button>
                 </li>
@@ -112,7 +113,8 @@
                     </button>
                 </li>
                 <li>
-                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar" onClick="NotaFinal()">
+                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar"
+                        onClick="NotaFinal()">
                         <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                     </button>
                 </li>
@@ -120,8 +122,8 @@
             </ul>
             <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;margin-left: 0px; ">
                 <li><span class="notificacion actividad display-none">
-                        <span class="glyphicon glyphicon-list-alt"></span> Actividad <span id="act_actual">1</span> / <span
-                            id="act_total">1</span>
+                        <span class="glyphicon glyphicon-list-alt"></span> Actividad <span id="act_actual">1</span> /
+                        <span id="act_total">1</span>
                     </span>
                     <span class="notificacion nota">
                         <span class="glyphicon glyphicon-pencil"></span> Nota <span id="txtNota">/10</span>
@@ -141,73 +143,94 @@
             </div>
             <div class="panel-body">
                 <div class="text-question">
-                    <input type="text"  size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre1a">&nbsp;
-                    <span><b> 1.</b> En los fragmentos que has revisado durante las unidades 1 y 2 no se encuentra un tipo
-                        de parlamento en particular ¿Puedes identificar cuál? <b>Escríbelo</b>
-                        a continuación.
+                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10"
+                        id="pre1a">&nbsp;
+                    <span><b> 1. Argumenta.</b> ¿Por qué debes considerar el tipo de lectores para tu texto expositivo
+                        al momento de escribir?
                     </span></div><br>
                 <textarea class="form-control text-question no-redimensionar " cols="60" rows="1" placeholder="Texto"></textarea><br>
 
                 <div class="text-question">
-                    <input type="text"  size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre2a">&nbsp;
-                    <span><b> 2. Escribe</b> los tipos de parlamentos que encontraste en los fragmentos revisados.
-                        <b>Ejemplifica</b> a partir de los textos.
+                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10"
+                        id="pre2a">&nbsp;
+                    <span><b> 2. Responde.</b> ¿Cuál es la razón para investigar sobre el tema que se va a exponer?
                     </span></div><br>
-                    <table class="table" style="text-align: center" border="1" bordercolor="#BB8FCE">
-                        <tr>
-                            <td WIDTH="25%" bgcolor="#EBDEF0"  >Tipo de parlamento:<br>
-                                Ejemplo:</td>
-                            <td><textarea class="form-control text-question no-redimensionar " cols="15"
-                                rows="2" placeholder="Texto"></textarea></td>
-                        </tr>
-                        <tr>
-                            <td bgcolor="#FDEBD0">Tipo de parlamento:
-                                Ejemplo:</td>
-                            <td><textarea class="form-control text-question no-redimensionar " cols="15"
-                                rows="2" placeholder="Texto"></textarea></td>
-                        </tr>
-                    </table>
+                <textarea class="form-control text-question no-redimensionar " cols="60" rows="1" placeholder="Texto"></textarea><br>
 
                 <div class="text-question">
-                    <input type="text"  size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre3a">&nbsp;
-                    <span><b> 3. Menciona</b> cinco acotaciones que se indiquen en el fragmento de La casa de
-                        Bernarda Alba.
+                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10"
+                        id="pre3a">&nbsp;
+                    <span><b>3. Escribe</b> tres oraciones con palabras baúl. Luego, <b>reescríbelas</b> con un
+                        lenguaje preciso. <b>Sigue</b> el ejemplo.
                     </span></div><br>
-                    <label>1. </label><input type="text" style="width:400px" placeholder="Texto"><br>
-                    <label>2. </label><input type="text" style="width:400px" placeholder="Texto"><br>
-                    <label>3. </label><input type="text" style="width:400px" placeholder="Texto"><br>
-                    <label>4. </label><input type="text" style="width:400px" placeholder="Texto"><br>
-                    <label>5. </label><input type="text" style="width:400px" placeholder="Texto"><br><br>
+                <table class="table" border="1" bordercolor="#2E86C1">
+                    <tr>
+                        <td WIDTH="50%">El sastre hizo los pantalones y dejó para mañana
+                            las camisas.</td>
+                        <td WIDTH="50%">El sastre confeccionó los pantalones y pospuso para
+                            mañana las camisas.</td>
+                    </tr>
+                    <tr>
+                        <td><textarea class="form-control text-question no-redimensionar " cols="60" rows="1"
+                                placeholder="Texto"></textarea></td>
+                        <td><textarea class="form-control text-question no-redimensionar " cols="60" rows="1"
+                                placeholder="Texto"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea class="form-control text-question no-redimensionar " cols="60" rows="1"
+                                placeholder="Texto"></textarea></td>
+                        <td><textarea class="form-control text-question no-redimensionar " cols="60" rows="1"
+                                placeholder="Texto"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea class="form-control text-question no-redimensionar " cols="60" rows="1"
+                                placeholder="Texto"></textarea></td>
+                        <td><textarea class="form-control text-question no-redimensionar " cols="60" rows="1"
+                                placeholder="Texto"></textarea></td>
+                    </tr>
+                </table>
 
-                    <div class="text-question">
-                            <input type="text"  size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre4a">&nbsp;
-                            <span><b> 4.</b> Si fueras director de teatro, <b>explica</b>, con referencia a La casa de Bernarda
-                                Alba, en qué momento emplearías una luz fuerte y en qué otro momento
-                                emplearías una luz más tenue. <b>Sigue</b> el ejemplo.
-                            </span></div><br>
-                            <table class="table" style="text-align: center" border="1" bordercolor="#BB8FCE">
-                                <tr>
-                                    <td WIDTH="15%" >Luz alta<br>
-                                        Ejemplo:</td>
-                                    <td>Última escena, cuando Bernarda expresa que en su casa se
-                                        hace lo que ella dice.</td>
-                                </tr>
-                                <tr>
-                                    <td>Luz alta
-                                        Ejemplo:</td>
-                                    <td><textarea class="form-control text-question no-redimensionar " cols="15"
-                                        rows="2" placeholder="Texto"></textarea></td>
-                                </tr>
-                                <tr>
-                                    <td>Luz alta
-                                        Ejemplo:</td>
-                                    <td><textarea class="form-control text-question no-redimensionar " cols="15"
-                                        rows="2" placeholder="Texto"></textarea></td>
-                                </tr>
-                            </table>
+
+                <div class="text-question">
+                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10"
+                        id="pre4a" readonly>&nbsp;
+                    <span><b> 4. Lee</b> el siguiente texto y subraya los términos técnicos que emplea en su
+                        explicación.</span></div><br>
+
+                <div class="text-question">
+                    <span><span class="enc1" id="1">El universo</span> <span class="enc1" id="2"></span>surgió de una
+                        explosión,
+                        <span class="enc1" id="3">pasando de la nada más absoluta al todo.</span> <span class="enc1" id="4">Este
+                            "todo" es tan solo
+                            un punto</span>
+                        <span class="enc1" id="5">infinitamente pequeño,</span> <span class="enc1" id="6">increíblemente
+                            caliente</span>
+                        y de <span class="enc1" id="7">densidad inimaginable</span>;<span class="enc1" id="8"> un punto</span>
+                        de
+                        <span class="enc1" id="9">energía pura</span>. El
+                        <span class="enc1" id="10">Big Bang</span>
+                        fue <span class="enc1" id="11">inmenso</span>, creó toda la <span class="enc1" id="12">masa</span>
+                        de
+                        las
+                        <span class="enc1" id="13">400 000 millones de galaxias</span>. Todo el <span class="enc1" id="14">universo</span>
+                        ocupaba entonces
+                        la <span class="enc1" id="15">trillonésima parte de un centímetro</span>.</span>
+                </div><br>
+                <div class="text-question">
+                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10"
+                        id="pre5a">&nbsp;
+                    <span><b> 5. Justifica.</b> ¿Qué tipo de apoyos usarías en un texto expositivo para explicar el
+                        Big Bang a un grupo de estudiantes de quinto de básica?</span></div><br>
+                <textarea class="form-control text-question no-redimensionar " cols="60" rows="2" placeholder="Texto"></textarea><br>
+                <div class="text-question">
+                    <input type="text" size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10"
+                        id="pre6a">&nbsp;
+                    <span><b> 6. Responde.</b> ¿Qué significa que debes delimitar tu exposición?</span></div><br>
+                <textarea class="form-control text-question no-redimensionar " cols="60" rows="2" placeholder="Texto"></textarea>
 
             </div>
         </div>
+    </div>
     </div>
     <div class="modal fade animated pulse" id="myModal" role="dialog">
         <div class="modal-dialog">
@@ -227,9 +250,10 @@
                                 <!--el input para ingresar el nombre del alumno debe se txt_alumno-->
                                 <input type="text" class="form-control nombre" id="txtAlumno" placeholder="Ingrese tu nombre">
                                 <div class="alert alert-danger display-none" id="txtAlumnoAlert" role="alert">
-                                    <button type="button" class="close" onclick="o$('#myModal').modal('hide')" aria-label="Close"><span
-                                            aria-hidden="true">&times;</span></button>
-                                    <span class="glyphicon glyphicon-info-sign error-color" aria-hidden="true"></span> Debes
+                                    <button type="button" class="close" onclick="o$('#myModal').modal('hide')"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <span class="glyphicon glyphicon-info-sign error-color" aria-hidden="true"></span>
+                                    Debes
                                     ingresar tu nombre</div>
                             </div>
                         </div>
@@ -257,11 +281,11 @@
     <script src="js/jquery.animate.css.js"></script>
     <script src="js/Utilitario.js"></script>
     <script src="js/validacionesExtras.js"></script>
-    <script src="js/actividad20.js"></script>
+    <script src="js/actividad37.js"></script>
 
 
     <script>
-        $("#n_pagina").html("59"); //impresion de pagina            
+        $("#n_pagina").html("73"); //impresion de pagina            
 
     </script>
 

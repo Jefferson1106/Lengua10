@@ -70,7 +70,7 @@
                     </button>
                 </li>
                 <li>
-                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar" >
+                    <button class="btn button button_3 btnCalificar mytooltip" data-info="Calificar / Comprobar" id="bt_comprobar" onclick="CalificacionAbierta()">
                         <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                     </button>
                 </li>
@@ -113,14 +113,13 @@
             <div class="panel-body">
                 <div class="text-question">
                     <input type="text"  size="2" style="text-align:center" class="nota-abierta calif" min="0" max="10" id="pre1a">&nbsp;
-                    <span><b> 1. Describe </b>  algunos elementos que hayas observado en un escenario cuando viste una obra en el teatro, por
-                        televisión o asististe a un concierto.
-                    </span></div><br>
+                    <span><b> 1. Explica </b> con tus palabras la diferencia entre las siguientes dos oraciones:</span></div><br>
+                    <i>¿Cuándo te compraste el vestido?</i> &nbsp;&nbsp;&nbsp;<i>Me gustaría preguntarte cuándo te compraste el vestido</i><br><br>
                 <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
 
                     <div class="text-question">
-                            <span><b> 2. Explica</b>  por qué todos esos elementos son importantes.
-                            </span></div><br>
+                            <span><b>2. Responde.</b> ¿Cuáles son las diferencias entre las siguientes expresiones?</span></div><br>
+                            <i>¡Pásame el vaso con agua!</i> &nbsp;&nbsp;&nbsp;<i>¿Me puedes pasar el vaso con agua?</i>&nbsp;&nbsp;&nbsp;<i>Dile que me pase el vaso con agua.</i><br><br>
                 <textarea class="form-control text-question no-redimensionar " cols="60" rows="3" placeholder="Texto"></textarea><br>
                 
             </div>
@@ -179,13 +178,11 @@
             <script src="js/jquery.animate.css.js"></script>
             <script src="js/Utilitario.js"></script>
             <script src="js/validacionesExtras.js"></script>
-            <script src="js/actividad18.js"></script>
+            <script src="js/actividad41.js"></script>
 
             <script>
-                $("#n_pagina").html("58"); //impresion de pagina            
-                $(".btnCalificar").bind("click", function () {
-                    CalificacionAbierta();
-                });
+                $("#n_pagina").html("76"); //impresion de pagina            
+            
             </script>
 
 </body>
